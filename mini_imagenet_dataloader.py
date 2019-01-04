@@ -173,8 +173,6 @@ class MiniImageNetDataLoader(object):
             out[idx, inp[idx]] = 1
         return out
 
-
-
     def get_batch(self, phase='train', idx=0):
         if phase=='train':
             all_filenames = self.train_filenames
@@ -209,6 +207,3 @@ class MiniImageNetDataLoader(object):
         this_inputb, this_labelb = self.process_batch(this_task_te_filenames, this_task_te_labels, epite_sample_num, reshape_with_one=False)
 
         return this_inputa, this_labela, this_inputb, this_labelb
-
-
-
