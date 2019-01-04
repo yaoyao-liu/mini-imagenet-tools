@@ -64,7 +64,7 @@ dataloader.generate_data_list(phase='test')
 dataloader.load_list(phase='all')
 
 for idx in range(total_train_step):
-    episode_train_img, episode_train_label, episode_test_img, episode_test_label = dataloader.get_batch(phase='train', idx=1)
+    episode_train_img, episode_train_label, episode_test_img, episode_test_label = dataloader.get_batch(phase='train', idx=idx)
     ...
 ```
 #### Performance
