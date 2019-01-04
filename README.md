@@ -26,7 +26,7 @@ It was proposed by [Vinyals et al.](http://papers.nips.cc/paper/6385-matching-ne
 - Pillow
 
 #### Usage 
-First, you need to download the image source files from [ImageNet website](http://www.image-net.org/challenges/LSVRC/2012/nonpub-downloads). If you already have it, you may use it directly.
+First, you need to download the image source files from [ImageNet website](http://www.image-net.org/challenges/LSVRC/2012/). If you already have it, you may use it directly.
 ```
 Filename: ILSVRC2012_img_train.tar
 Size: 138 GB
