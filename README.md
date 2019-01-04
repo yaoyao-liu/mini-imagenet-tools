@@ -58,6 +58,7 @@ for idx in range(total_train_step):
 ```
 #### Performance
 The 1-shot, 5-way classification accuracy (%)
+
 |Method|Accuracy|
 |---|---|
 |[MAML](https://arxiv.org/pdf/1703.03400.pdf)| 48.70 ± 1.75|
@@ -65,6 +66,11 @@ The 1-shot, 5-way classification accuracy (%)
 |[SNAIL](https://openreview.net/pdf?id=B1DmUzWAW)| 55.71 ± 0.99 |
 |[TADAM](https://arxiv.org/pdf/1805.10123.pdf)| 58.5 ± 0.3 |
 |[MTL](https://arxiv.org/pdf/1812.02391.pdf)| 61.2 ± 1.8 |
+
+First Header | Second Header
+------------ | -------------
+Content cell 1 | Content cell 2
+Content column 1 | Content column 2
 
 #### Acknowledgement
 [MAML](https://github.com/cbfinn/maml)
