@@ -1,5 +1,6 @@
+<p align="center">
 ![mini-ImageNet Logo](https://github.com/y2l/mini-imagenet-tools/blob/master/mini-imagenet.png)
-
+</p>
 # Tools for mini-ImageNet Dataset
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Y2L/social-relation-tensorflow/blob/master/LICENSE)
