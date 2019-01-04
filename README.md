@@ -50,6 +50,7 @@ If you want to resize the images to the specified resolution:
 python mini_imagenet_generator.py --tar_dir [your_path_of_the_ILSVRC2012_img_train.tar] --image_resize 100
 ```
 P.S. In default settings, the images will be resized to 84 × 84. 
+
 If you don't want to resize the images, you may set ```--image_resize 0```.
 
 To use the ```MiniImageNetDataLoader``` class:
