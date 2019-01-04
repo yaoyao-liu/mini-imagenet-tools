@@ -99,7 +99,6 @@ class MiniImageNetGenerator(object):
                             im_resized = cv2.resize(im, (self.image_resize, self.image_resize), interpolation=cv2.INTER_AREA)
                             cv2.imwrite(os.path.join(this_cls_dir, images[cls][i]),im_resized)
 
-
 if __name__ == "__main__":
     dataset_generator = MiniImageNetGenerator(args)
     dataset_generator.untar_mini()
