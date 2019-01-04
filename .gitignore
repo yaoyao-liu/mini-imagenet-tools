@@ -1,0 +1,12 @@
+# File types
+*.pyc
+*.npy
+
+# Folders
+imagenet
+mini_imagenet
+processed_images
+episode_filename_list
+
+# File
+debug_main.py
