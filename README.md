@@ -5,7 +5,7 @@
 
 This repo provides python source codes to generate mini-ImageNet dataset from ImageNet and the utils to generate batches during training.
 
-#### Summary
+### Summary
 
 * [About mini-ImageNet](#about-mini-ImageNet)
 * [Requirements](#requirements)
@@ -13,11 +13,11 @@ This repo provides python source codes to generate mini-ImageNet dataset from Im
 * [Performance](#performance)
 * [Acknowledgement](#acknowledgement)
 
-#### About mini-ImageNet
+### About mini-ImageNet
 
 It was proposed by [Vinyals et al.](http://papers.nips.cc/paper/6385-matching-networks-for-one-shot-learning.pdf) for few-shot learning evaluation. Its complexity is high due to the use of ImageNet images but requires fewer resources and infrastructure than running on the full [ImageNet dataset](https://arxiv.org/pdf/1409.0575.pdf). In total, there are 100 classes with 600 samples of 84×84 color images per class. These 100 classes are divided into 64, 16, and 20 classes respectively for sampling tasks for meta-training, meta-validation, and meta-test.
 
-#### Requirements
+### Requirements
 
 - Python 2.7 or 3.x
 - numpy
@@ -25,7 +25,7 @@ It was proposed by [Vinyals et al.](http://papers.nips.cc/paper/6385-matching-ne
 - opencv-python
 - Pillow
 
-#### Usage 
+### Usage 
 First, you need to download the image source files from [ImageNet website](http://www.image-net.org/challenges/LSVRC/2012/). If you already have it, you may use it directly.
 ```
 Filename: ILSVRC2012_img_train.tar
@@ -69,7 +69,7 @@ for idx in range(total_train_step):
     episode_train_img, episode_train_label, episode_test_img, episode_test_label = dataloader.get_batch(phase='train', idx=idx)
     ...
 ```
-#### Performance
+### Performance
 The 1-shot, 5-way classification accuracy (%)
 
 |Method|Accuracy|
@@ -81,7 +81,7 @@ The 1-shot, 5-way classification accuracy (%)
 |[MTL](https://arxiv.org/pdf/1812.02391.pdf)| 61.2 ± 1.8 |
 
 
-#### Acknowledgement
+### Acknowledgement
 [MAML](https://github.com/cbfinn/maml)
 
 [Optimization as a Model for Few-Shot Learning](https://github.com/gitabcworld/FewShotLearning)
