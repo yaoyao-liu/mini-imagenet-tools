@@ -1,7 +1,7 @@
 ![mini-ImageNet Logo](https://github.com/y2l/mini-imagenet-tools/blob/master/mini-imagenet.png)
 # Tools for mini-ImageNet Dataset
 
-[![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Y2L/social-relation-tensorflow/blob/master/LICENSE)
+[![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Y2L/mini-imagenet-tools/blob/master/LICENSE)
 
 This repo provides python source codes for creating mini-ImageNet dataset from ImageNet and the utils for generating batches during training.
 
