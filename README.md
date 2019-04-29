@@ -3,7 +3,7 @@
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Y2L/mini-imagenet-tools/blob/master/LICENSE)
 
-This repo provides python source codes for creating mini-ImageNet dataset from ImageNet and the utils for generating batches during training.
+This repo provides python source codes for creating mini-ImageNet dataset from ImageNet and the utils for generating batches during training. This repo is related to our work on meta-learning: [Meta-Transfer Learning for Few-Shot Learning](https://github.com/y2l/meta-transfer-learning-tensorflow).
 
 ### Summary
 
