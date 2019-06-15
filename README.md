@@ -5,9 +5,9 @@
 
 This repo provides python source code for creating mini-ImageNet dataset from ImageNet and the utils for generating batches during training. This repo is related to our work on few-shot learning: [Meta-Transfer Learning](https://github.com/y2l/meta-transfer-learning-tensorflow).
 
-### google drive link
+### Google Drive Link 
 
-https://drive.google.com/open?id=137M9jEv8nw0agovbUiEN_fPl_waJ2jIj
+https://drive.google.com/open?id=137M9jEv8nw0agovbUiEN_fPl_waJ2jIj (Thanks for the contributions by @vainaijr)
 
 ### Summary
 
