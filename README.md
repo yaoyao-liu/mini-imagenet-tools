@@ -5,9 +5,6 @@
 
 This repo provides python source code for creating mini-ImageNet dataset from ImageNet and the utils for generating batches during training. This repo is related to our work on few-shot learning: [Meta-Transfer Learning](https://github.com/y2l/meta-transfer-learning-tensorflow).
 
-### Processed Images' Google Drive Link 
-
-https://drive.google.com/open?id=137M9jEv8nw0agovbUiEN_fPl_waJ2jIj (Thanks for the contributions by @vainaijr)
 
 ### Summary
 
@@ -84,6 +81,10 @@ The 1-shot, 5-way classification accuracy (%)
 |[SNAIL](https://openreview.net/pdf?id=B1DmUzWAW)| 55.71 ± 0.99 |
 |[TADAM](https://arxiv.org/pdf/1805.10123.pdf)| 58.5 ± 0.3 |
 |[MTL](https://arxiv.org/pdf/1812.02391.pdf)| 61.2 ± 1.8 |
+
+### Processed Images' Google Drive Link 
+
+https://drive.google.com/open?id=137M9jEv8nw0agovbUiEN_fPl_waJ2jIj (Thanks for the contribution by @vainaijr)
 
 
 ### Acknowledgement
