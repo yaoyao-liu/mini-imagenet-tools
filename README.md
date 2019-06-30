@@ -84,7 +84,8 @@ The 1-shot, 5-way classification accuracy (%)
 
 ### Download Processed Images 
 
-[Download JPEG files](https://drive.google.com/open?id=137M9jEv8nw0agovbUiEN_fPl_waJ2jIj) (Thanks for the contribution by [@vainaijr](https://github.com/vainaijr))
+[Download jpg files](https://drive.google.com/open?id=137M9jEv8nw0agovbUiEN_fPl_waJ2jIj) (Thanks for the contribution by [@vainaijr](https://github.com/vainaijr))
+
 [Download tar files](https://meta-transfer-learning.yaoyao-liu.com/download/)
 
 
