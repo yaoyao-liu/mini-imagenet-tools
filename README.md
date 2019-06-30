@@ -82,9 +82,10 @@ The 1-shot, 5-way classification accuracy (%)
 |[TADAM](https://arxiv.org/pdf/1805.10123.pdf)| 58.5 ± 0.3 |
 |[MTL](https://arxiv.org/pdf/1812.02391.pdf)| 61.2 ± 1.8 |
 
-### Processed Images' Google Drive Link 
+### Download Processed Images 
 
-https://drive.google.com/open?id=137M9jEv8nw0agovbUiEN_fPl_waJ2jIj (Thanks for the contribution by @vainaijr)
+[Download JPEG files](https://drive.google.com/open?id=137M9jEv8nw0agovbUiEN_fPl_waJ2jIj) (Thanks for the contribution by [@vainaijr](https://github.com/vainaijr))
+[Download tar files](https://meta-transfer-learning.yaoyao-liu.com/download/)
 
 
 ### Acknowledgement
