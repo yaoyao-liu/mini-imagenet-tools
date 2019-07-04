@@ -1,7 +1,10 @@
 ![mini-ImageNet Logo](https://github.com/y2l/mini-imagenet-tools/blob/master/mini-imagenet.png)
 # Tools for mini-ImageNet Dataset
 
-[![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Y2L/mini-imagenet-tools/blob/master/LICENSE)
+[![LICENSE](https://img.shields.io/github/license/y2l/mini-imagenet-tools.svg)](https://github.com/y2l/meta-transfer-learning-tensorflow/blob/master/LICENSE)
+[![Python](https://img.shields.io/badge/python-2.7-blue.svg)](https://www.python.org/)
+[![TensorFlow](https://img.shields.io/badge/tensorflow-1.3.0-orange.svg)](https://www.tensorflow.org/)
+[![CodeFactor](https://www.codefactor.io/repository/github/y2l/mini-imagenet-tools/badge)](https://www.codefactor.io/repository/github/y2l/mini-imagenet-tools)
 
 This repo provides python source code for creating mini-ImageNet dataset from ImageNet and the utils for generating batches during training. This repo is related to our work on few-shot learning: [Meta-Transfer Learning](https://github.com/y2l/meta-transfer-learning-tensorflow).
 
