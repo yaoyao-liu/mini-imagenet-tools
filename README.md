@@ -74,15 +74,15 @@ for idx in range(total_train_step):
     ...
 ```
 ### Performance
-The 1-shot, 5-way classification accuracy (%)
+5-way classification accuracy (%)
 
-|Method|Accuracy|
-|---|---|
-|[MAML](https://arxiv.org/pdf/1703.03400.pdf)| 48.70 ± 1.75|
-|[ProtoNets](http://papers.nips.cc/paper/6996-prototypical-networks-for-few-shot-learning.pdf)| 49.42 ± 0.78 |
-|[SNAIL](https://openreview.net/pdf?id=B1DmUzWAW)| 55.71 ± 0.99 |
-|[TADAM](https://arxiv.org/pdf/1805.10123.pdf)| 58.5 ± 0.3 |
-|[MTL](https://arxiv.org/pdf/1812.02391.pdf)| 61.2 ± 1.8 |
+|Method|1-shot|5-shot|
+|---|---|---|
+|[MAML](https://arxiv.org/pdf/1703.03400.pdf)| 48.70 ± 1.75| 63.11 ± 0.92|
+|[ProtoNets](http://papers.nips.cc/paper/6996-prototypical-networks-for-few-shot-learning.pdf)| 49.42 ± 0.78 |68.02 ± 0.66|
+|[SNAIL](https://openreview.net/pdf?id=B1DmUzWAW)| 55.71 ± 0.99 |68.88 ± 0.92|
+|[TADAM](https://arxiv.org/pdf/1805.10123.pdf)| 58.5 ± 0.3 |76.7 ± 0.3|
+|[MTL](https://arxiv.org/pdf/1812.02391.pdf)| 61.2 ± 1.8 |75.5 ± 0.8|
 
 ### Download Processed Images 
 
