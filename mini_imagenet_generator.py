@@ -103,4 +103,3 @@ if __name__ == "__main__":
     dataset_generator = MiniImageNetGenerator(args)
     dataset_generator.untar_mini()
     dataset_generator.process_original_files()
-
