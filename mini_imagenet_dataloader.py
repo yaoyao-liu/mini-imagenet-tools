@@ -186,7 +186,7 @@ class MiniImageNetDataLoader(object):
         else:
             print('Please select vaild phase')
 
-        one_episode_sample_num = self.num_samples_per_class*self.shot_num
+        one_episode_sample_num = self.num_samples_per_class*self.way_num
         this_task_filenames = all_filenames[idx*one_episode_sample_num:(idx+1)*one_episode_sample_num]
         epitr_sample_num = self.shot_num
         epite_sample_num = self.episode_test_sample_num
