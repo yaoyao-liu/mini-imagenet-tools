@@ -15,11 +15,12 @@ import scipy.misc as scm
 from tqdm import trange
 
 class MiniImageNetDataLoader(object):
-    def __init__(self, shot_num, way_num, episode_test_sample_num):
+    def __init__(self, shot_num, way_num, episode_test_sample_num, shuffle_images = False):
         self.shot_num = shot_num
         self.way_num = way_num
         self.episode_test_sample_num = episode_test_sample_num
         self.num_samples_per_class = episode_test_sample_num + shot_num
+        self.shuffle_images = shuffle_images
         metatrain_folder = './processed_images/train'
         metaval_folder = './processed_images/val'
         metatest_folder = './processed_images/test'
@@ -28,7 +29,7 @@ class MiniImageNetDataLoader(object):
         if not os.path.exists(npy_dir):
             os.mkdir(npy_dir)
 
-        self.npy_base_dir = npy_dir + str(self.shot_num) + 'shot_' + str(self.way_num) + 'way/'
+        self.npy_base_dir = npy_dir + str(self.shot_num) + 'shot_' + str(self.way_num) + 'way_' + str(episode_test_sample_num) + 'shuffled_' + str(self.shuffle_images) + '/'
         if not os.path.exists(self.npy_base_dir):
             os.mkdir(self.npy_base_dir)
 
@@ -68,7 +69,7 @@ class MiniImageNetDataLoader(object):
                 for _ in trange(episode_num):
                     sampled_character_folders = random.sample(folders, self.way_num)
                     random.shuffle(sampled_character_folders)
-                    labels_and_images = self.get_images(sampled_character_folders, range(self.way_num), nb_samples=self.num_samples_per_class, shuffle=False)
+                    labels_and_images = self.get_images(sampled_character_folders, range(self.way_num), nb_samples=self.num_samples_per_class, shuffle=self.shuffle_images)
                     labels = [li[0] for li in labels_and_images]
                     filenames = [li[1] for li in labels_and_images]
                     all_filenames.extend(filenames)
@@ -86,7 +87,7 @@ class MiniImageNetDataLoader(object):
                 for _ in trange(episode_num):
                     sampled_character_folders = random.sample(folders, self.way_num)
                     random.shuffle(sampled_character_folders)
-                    labels_and_images = self.get_images(sampled_character_folders, range(self.way_num), nb_samples=self.num_samples_per_class, shuffle=False)
+                    labels_and_images = self.get_images(sampled_character_folders, range(self.way_num), nb_samples=self.num_samples_per_class, shuffle=self.shuffle_images)
                     labels = [li[0] for li in labels_and_images]
                     filenames = [li[1] for li in labels_and_images]
                     all_filenames.extend(filenames)
@@ -104,7 +105,7 @@ class MiniImageNetDataLoader(object):
                 for _ in trange(episode_num):
                     sampled_character_folders = random.sample(folders, self.way_num)
                     random.shuffle(sampled_character_folders)
-                    labels_and_images = self.get_images(sampled_character_folders, range(self.way_num), nb_samples=self.num_samples_per_class, shuffle=False)
+                    labels_and_images = self.get_images(sampled_character_folders, range(self.way_num), nb_samples=self.num_samples_per_class, shuffle=self.shuffle_images)
                     labels = [li[0] for li in labels_and_images]
                     filenames = [li[1] for li in labels_and_images]
                     all_filenames.extend(filenames)
@@ -144,7 +145,7 @@ class MiniImageNetDataLoader(object):
         new_path_list = []
         new_label_list = []
         for k in range(batch_sample_num):
-            class_idxs = range(0, self.way_num)
+            class_idxs = list(range(0, self.way_num))
             random.shuffle(class_idxs)
             for class_idx in class_idxs:
                 true_idx = class_idx*batch_sample_num + k
@@ -153,13 +154,13 @@ class MiniImageNetDataLoader(object):
 
         img_list = []
         for filepath in new_path_list:
-            this_img = scm.imread(filepath)
+            this_img = imageio.imread(filepath)
             this_img = this_img / 255.0
             img_list.append(this_img)
 
         if reshape_with_one:
             img_array = np.array(img_list)
-            label_array = one_hot(np.array(new_label_list)).reshape([1, self.way_num*batch_sample_num, -1])
+            label_array = self.one_hot(np.array(new_label_list)).reshape([1, self.way_num*batch_sample_num, -1])
         else:
             img_array = np.array(img_list)
             label_array = self.one_hot(np.array(new_label_list)).reshape([self.way_num*batch_sample_num, -1])
