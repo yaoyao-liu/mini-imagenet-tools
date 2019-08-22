@@ -11,8 +11,8 @@
 import os
 import random
 import numpy as np
-import scipy.misc as scm
 from tqdm import trange
+import imageio
 
 class MiniImageNetDataLoader(object):
     def __init__(self, shot_num, way_num, episode_test_sample_num, shuffle_images = False):
