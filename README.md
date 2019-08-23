@@ -12,6 +12,7 @@ This repo provides python source code for creating mini-ImageNet dataset from Im
 
 * [About mini-ImageNet](#about-mini-ImageNet)
 * [Requirements](#requirements)
+* [Installation](#installation)
 * [Usage](#usage)
 * [Performance](#performance)
 * [Acknowledgement](#acknowledgement)
@@ -27,6 +28,17 @@ The mini-ImageNet dataset was proposed by [Vinyals et al.](http://papers.nips.cc
 - tqdm
 - opencv-python
 - Pillow
+
+### Installation
+Install via PyPI:
+```bash
+pip install miniimagenettools
+```
+
+Install via GitHub:
+```bash
+git clone https://github.com/yaoyao-liu/mini-imagenet-tools.git
+```
 
 ### Usage 
 First, you need to download the image source files from [ImageNet website](http://www.image-net.org/challenges/LSVRC/2012/). If you already have it, you may use it directly.
@@ -58,7 +70,7 @@ If you don't want to resize the images, you may set ```--image_resize 0```.
 
 To use the ```MiniImageNetDataLoader``` class:
 ```python
-from mini_imagenet_dataloader import MiniImageNetDataLoader
+from miniimagenettools.mini_imagenet_dataloader import MiniImageNetDataLoader
 
 dataloader = MiniImageNetDataLoader(shot_num=5, way_num=5, episode_test_sample_num=15)
 
