@@ -101,7 +101,7 @@ for idx in range(total_train_step):
 
 [Download jpg files](https://drive.google.com/open?id=137M9jEv8nw0agovbUiEN_fPl_waJ2jIj) (Thanks for the contribution by [@vainaijr](https://github.com/vainaijr))
 
-[Download tar files](https://meta-transfer-learning.yaoyao-liu.com/download/)
+[Download tar files](https://www.iti-tju.org/~yyliu/meta-transfer-learning/download/)
 
 
 ### Acknowledgement
