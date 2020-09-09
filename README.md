@@ -91,7 +91,7 @@ for idx in range(total_train_step):
 ```
 ### Performance
 
-Check the SOTA results for mini-ImageNet on [this page](https://github.com/yaoyao-liu/few-shot-classification-leaderboard).
+Check the SOTA results for mini-ImageNet on [this page](https://few-shot.yyliu.net/miniimagenet.html).
 
 ### Download Processed Images 
 
