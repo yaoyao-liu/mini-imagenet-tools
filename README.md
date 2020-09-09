@@ -46,6 +46,7 @@ git clone https://github.com/yaoyao-liu/mini-imagenet-tools.git
 
 ### Usage 
 First, you need to download the image source files from [ImageNet website](http://www.image-net.org/challenges/LSVRC/2012/). If you already have it, you may use it directly.
+Some people report the ImageNet website is not working. Here is an [alternative download link](https://academictorrents.com/details/a306397ccf9c2ead27155983c254227c0fd938e2). Please carefully read the terms for ImageNet before you download it.
 ```
 Filename: ILSVRC2012_img_train.tar
 Size: 138 GB
