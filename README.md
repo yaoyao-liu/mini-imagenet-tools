@@ -23,6 +23,8 @@ This repo provides python source code for creating mini-ImageNet dataset from Im
 
 The mini-ImageNet dataset was proposed by [Vinyals et al.](http://papers.nips.cc/paper/6385-matching-networks-for-one-shot-learning.pdf) for few-shot learning evaluation. Its complexity is high due to the use of ImageNet images but requires fewer resources and infrastructure than running on the full [ImageNet dataset](https://arxiv.org/pdf/1409.0575.pdf). In total, there are 100 classes with 600 samples of 84×84 color images per class. These 100 classes are divided into 64, 16, and 20 classes respectively for sampling tasks for meta-training, meta-validation, and meta-test.
 
+Please note that the split files in `csv_files` folder are created by [Ravi and Larochelle](https://openreview.net/pdf?id=rJY0-Kcll) ([GitHub link](https://github.com/twitter/meta-learning-lstm/tree/master/data/miniImagenet)). [Vinyals et al.](http://papers.nips.cc/paper/6385-matching-networks-for-one-shot-learning.pdf) didn't include their split files for mini-ImageNet when they first released their paper, so [Ravi and Larochelle](https://openreview.net/pdf?id=rJY0-Kcll) created their own splits. Additional split files are provided [here](https://github.com/yaoyao-liu/mini-imagenet-tools/tree/master/mini_imagenet_split).
+
 ### Requirements
 
 - Python 2.7 or 3.x
@@ -109,3 +111,7 @@ for idx in range(total_train_step):
 [Model-Agnostic Meta-Learning](https://github.com/cbfinn/maml)
 
 [Optimization as a Model for Few-Shot Learning](https://github.com/gitabcworld/FewShotLearning)
+
+[Meta-Learning for Semi-Supervised Few-Shot Classification](https://github.com/renmengye/few-shot-ssl-public)
+
+[@ChristopherDaw](https://github.com/ChristopherDaw)
