@@ -1,4 +1,4 @@
-![mini-ImageNet Logo](https://github.com/y2l/mini-imagenet-tools/blob/master/mini-imagenet.png)
+![mini-ImageNet Logo](https://github.com/y2l/mini-imagenet-tools/blob/main/mini-imagenet.png)
 # Tools for mini-ImageNet Dataset
 
 [![LICENSE](https://img.shields.io/github/license/y2l/mini-imagenet-tools.svg)](https://github.com/y2l/meta-transfer-learning-tensorflow/blob/master/LICENSE)
